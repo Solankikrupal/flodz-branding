@@ -5,10 +5,8 @@ body {
 }
 
 .custom-backgrond {
-
   background: url("/public/images/hero-bg.png") no-repeat, lightgray 0px 0px / 100.528% 100.135% linear-gradient(rgba(0, 0, 0, 1) 50%, rgba(142, 100, 255, 1) 100%);
   background-size: cover;
-
 }
 
 .text-custom-gradient {
@@ -32,9 +30,13 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.text-custom-gradient-pink{
+.text-custom-gradient-pink {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 62.00%, rgba(255, 255, 255, 0.10) 100%);
-  box-shadow: 1px 1px 3px 0px rgba(142,100,255,1);  
+  box-shadow: 1px 1px 3px 0px rgba(142, 100, 255, 1);
+}
+
+.bg-contact-us-section {
+  background: var(--grad, linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgb(102, 51, 238, 1) 100%, rgb(255, 255, 255, 0.712) 100%));
 }
 
 .custom-border-primary {
@@ -42,4 +44,9 @@ body {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, rgba(102, 51, 238, 0.00) 53.13%, rgba(102, 51, 238, 0.03) 100%);
   mix-blend-mode: luminosity;
   backdrop-filter: blur(26.5px);
+}
+
+.custom-backgrond-footer {
+  background: url("/public/images/footer-bg.png") no-repeat, lightgray -34.548px -49.808px / 90.468% 166.263% linear-gradient(rgba(0, 0, 0, 1) 100%, rgba(142, 100, 255, 1) 100%);
+  background-size: cover;
 }
