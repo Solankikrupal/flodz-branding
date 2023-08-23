@@ -5,17 +5,7 @@ function Hero() {
     <div className="min-h-screen min-w-full  flex flex-col justify-center p-10">
       <div className="relative w-full mx-auto">
         <div className="relative  custom-backgrond shadow-lg sm:rounded-3xl min-h-screen">
-{/*           <img
-            className="absolute top-0 bottom-0 w-full h-full object-cover mix-blend-darken z-0"
-            src="images/hero-bg.png"
-            alt=""
 
-          />
-          <img
-            className="absolute bottom-0 w-full h-full object-cover z-0"
-            src="svg/pattern.svg"
-            alt=""
-          /> */}
           <div className="px-20 py-6 z-30">
             {/* <!-- nav --> */}
             <div className="flex items-center justify-between ">
