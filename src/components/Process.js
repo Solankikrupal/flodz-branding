@@ -81,7 +81,7 @@ function Process() {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-2 xl:grid-cols-3 pt-16">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 pt-16">
         {data.map((item) => (
           <div className="mt-6 lg:mt-0 ">
             <div className="">

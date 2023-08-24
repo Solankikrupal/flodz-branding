@@ -15,7 +15,7 @@ function AdSlider() {
   return (
     <section className="pb-20 xl:pb-40 pt-24 xl:pt-44 overflow-hidden">
       <>
-        <div className="bg-white relative w-100 py-6 flex items-center skew-y-[9.971deg] ">
+        <div className="bg-white relative w-100 py-3 md:py-6 flex items-center skew-y-[9.971deg] ">
           <marquee>
             <div className="flex justify-center items-center">
               {data.map((item) => (
@@ -30,7 +30,7 @@ function AdSlider() {
           </marquee>
         </div>
       </>
-      <div className="bg-white relative w-100 py-6 flex items-center ad-slider-background-primary skew-y-[-3.995deg] translate-y-[-px] lg:translate-y-[-158px]">
+      <div className="bg-white relative w-100 py-3 md:py-6 flex items-center ad-slider-background-primary skew-y-[-3.995deg] translate-y-[-25px] lg:translate-y-[-158px]">
         <marquee >
           <div className="flex justify-center items-center">
             {data.map((item) => (
