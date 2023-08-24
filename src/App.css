@@ -36,7 +36,7 @@ body {
 }
 
 .bg-contact-us-section {
-  background: var(--grad, linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgb(102, 51, 238, 1) 100%, rgb(255, 255, 255, 0.712) 100%));
+  background: var(--grad, linear-gradient(180deg, rgba(0, 0, 0, 0.00) 1%, rgb(102, 51, 238, 1) 100%, rgb(255, 255, 255, 0.712) 100%));
 }
 
 .custom-border-primary {
@@ -49,4 +49,9 @@ body {
 .custom-backgrond-footer {
   background: url("/public/images/footer-bg.png") no-repeat, lightgray -34.548px -49.808px / 90.468% 166.263% linear-gradient(rgba(0, 0, 0, 1) 100%, rgba(142, 100, 255, 1) 100%);
   background-size: cover;
+}
+
+.ad-slider-background-primary {
+  background: linear-gradient(101deg, #63E 80%, #FFF 120%);
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.35);
 }

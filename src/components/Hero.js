@@ -2,7 +2,7 @@ import React from "react";
 
 function Hero() {
   return (
-    <div className="min-h-screen min-w-full  flex flex-col justify-center p-10">
+    <div className="min-h-screen min-w-full  flex flex-col justify-center px-10 pb-10">
       <div className="relative w-full mx-auto">
         <div className="relative  custom-backgrond shadow-lg sm:rounded-3xl min-h-screen">
 
