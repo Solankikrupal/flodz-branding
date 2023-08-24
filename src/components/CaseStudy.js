@@ -22,7 +22,7 @@ function CaseStudy() {
     },
   ];
   return (
-    <section className="pt-16 px-10 pb-24">
+    <section className="pt-8 md:pt-16 px-5 md:px-10 pb-12 md:pb-24">
       <div className="flex flex-wrap -mx-4">
         <div className="w-full px-4">
           <div className="">
@@ -47,10 +47,10 @@ function CaseStudy() {
                 Projects We Served
               </span>
             </div>
-            <h1 className="text-4xl font-bold tracking-tight leading-none md:text-4xl xl:text-4x text-wheat-white">
+            <h1 className="text-2xl lg:text-4xl font-bold tracking-tight leading-none xl:text-4xl text-wheat-white">
               Explore Our Case Studies of
             </h1>
-            <h1 className="text-4xl font-bold tracking-tight leading-none md:text-4xl xl:text-4x text-custom-gradient-secondary">
+            <h1 className="text-2xl lg:text-4xl font-bold tracking-tight leading-none  xl:text-4xl text-custom-gradient-secondary">
               Triumph and Transformation
             </h1>
           </div>

@@ -47,7 +47,7 @@ function Process() {
   ];
 
   return (
-    <section className="pt-16 px-10 pb-24">
+    <section className="pt-8 lg:pt-16 px-5 lg:px-10 pb-12 lg:pb-24">
       <div className="flex flex-wrap -mx-4">
         <div className="w-full px-4">
           <div className="">
@@ -72,28 +72,28 @@ function Process() {
                 Process
               </span>
             </div>
-            <h1 className="text-4xl font-bold tracking-tight leading-none md:text-4xl xl:text-4x text-wheat-white">
+            <h1 className="text-2xl lg:text-4xl font-bold tracking-tight leading-none  xl:text-4xl text-wheat-white">
               Elevating Visions,
             </h1>
-            <h1 className="text-4xl font-bold tracking-tight leading-none md:text-4xl xl:text-4x text-custom-gradient-secondary">
+            <h1 className="text-2xl lg:text-4xl font-bold tracking-tight leading-none  xl:text-4xl text-custom-gradient-secondary">
               Crafting Experiences
             </h1>
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-12 pt-16">
+      <div className="grid grid-cols-2 xl:grid-cols-3 pt-16">
         {data.map((item) => (
-          <div className=" col-span-4">
+          <div className="mt-6 lg:mt-0 ">
             <div className="">
               <div className="">
                 <img src={item.img} alt="" />
               </div>
-              <h4 className="font-semibold text-3xl text-wheat-white my-6">
+              <h4 className="font-semibold text-xl lg:text-3xl text-wheat-white my-6">
                 {item.title}
               </h4>
               {item.details.map((item) => (
-                <div className="grid grid-cols-12 text-white mb-8 pr-16">
-                  <div className="col-span-1 flex align-top justify-center pt-3">
+                <div className="grid grid-cols-12 text-white mb-8 lg:pr-16">
+                  <div className="col-span-1 flex align-top justify-center pt-2 lg:pt-3">
                     <svg
                       width="8"
                       height="14"
@@ -111,7 +111,7 @@ function Process() {
                     </svg>
                   </div>
                   <div className="col-span-11">
-                    <h2 className="text-xl font-normal mb-2 text-custom-gradient">
+                    <h2 className="text-lg lg:text-xl font-normal mb-2 text-custom-gradient">
                       {item.title}
                     </h2>
                     <p className="text-base font-normal text-[#D9D9D9] opacity-30 font-serif">

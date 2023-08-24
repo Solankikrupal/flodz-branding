@@ -2,10 +2,10 @@ import React from "react";
 
 function ContactUs() {
   return (
-    <section class="py-20 px-10 bg-contact-us-section">
-      <div class="grid grid-cols-12">
-        <div class="col-span-6 ">
-          <h1 className="text-4xl font-bold tracking-tight leading-none md:text-4xl xl:text-4x text-wheat-white mb-1">
+    <section class="pt-8 px-5 lg:pt-16 lg:px-10 pb-12 lg:pb-24 bg-contact-us-section">
+      <div class="grid lg:grid-cols-12">
+        <div class="col-span-6 pb-4 lg:pb-0">
+          <h1 className="text-4xl font-bold tracking-tight leading-none xl:text-4xl text-wheat-white mb-1">
             How Can We <p> Help?</p>
           </h1>
           <p class=" font-normal text-md text-white mt-2">
@@ -14,7 +14,7 @@ function ContactUs() {
         </div>
 
         <div class="col-span-6  items-center justify-start">
-          <div class="mx-auto w-full max-w-lg">
+          <div class="lg:mx-auto w-full max-w-lg">
             <form action="https://api.web3forms.com/submit">
               <input
                 type="hidden"

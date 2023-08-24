@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     /* <!-- component --> */
-    <footer className="px-10 pt-10 pb-4 custom-backgrond-footer">
+    <footer className="px-5 md:px-10 pt-10 pb-4 custom-backgrond-footer">
       <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
         <div class="sm:col-span-2">
           <img src="/svg/footer-logo.svg" alt="" />

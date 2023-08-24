@@ -28,10 +28,10 @@ function Services() {
     },
   ];
   return (
-    <section className="pt-16 px-10 pb-24">
-      <div className="bg-[#080807] rounded-2xl px-10 py-20">
+    <section className="pt-8 lg:pt-16 px-5 lg:px-10 pb-12 lg:pb-24">
+      <div className="bg-[#080807] rounded-2xl px-4 py-8 lg:px-10 lg:py-20">
         <div className="flex flex-wrap -mx-4">
-          <div className="w-full px-4">
+          <div className="w-full px-4"> 
             <div className="">
               <div className="flex items-center mb-7">
                 <svg
@@ -54,15 +54,15 @@ function Services() {
                   Services
                 </span>
               </div>
-              <h1 className="text-4xl font-bold tracking-tight leading-none md:text-4xl xl:text-4x text-custom-gradient-white ">
-                Discover Our Services for <p className="mt-5"> Your Success </p>
+              <h1 className="text-2xl lg:text-4xl font-bold tracking-tight leading-none xl:text-4xl text-custom-gradient-white ">
+                Discover Our Services for <p className="lg:mt-5"> Your Success </p>
               </h1>
             </div>
           </div>
         </div>
-        <div className="grid grid-cols-12 pt-16 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-12 pt-16 gap-2 lg:gap-10">
           {data.map((item) => (
-            <div className="col-span-4 py-6 px-8 custom-border-primary mb-6">
+            <div className="lg:col-span-4 py-4 lg:py-6 lg:px-8 custom-border-primary mb-3 lg:mb-6">
               <div className="">
                 <div className=""></div>
                 <h4 className="font-semibold text-3xl text-wheat-white mb-3">
