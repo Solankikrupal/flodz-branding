@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
 
 function Hero() {
@@ -8,31 +9,43 @@ function Hero() {
         <div className="relative  custom-backgrond shadow-lg rounded-3xl xl:min-h-screen">
           <div className="px-2 lg:px-6 3xl:px-20 py-6 z-30">
             {/* <!-- nav --> */}
-            <div className="flex items-center justify-between ">
+            <div className="flex items-center justify-between " id="home">
               <div className="flex items-center justify-center">
                 <div className="flex items-center justify-center text-3xl font-bold text-true-gray-800">
                   <img alt="" src="svg/Logo.svg"></img>
                 </div>
               </div>
               <div className="hidden md:flex items-center justify-center gap-3">
-                <a
-                  href="/"
-                  className="flex items-center justify-center  text-base  text-wheat-white font-normal tracking-tight transition duration-150 ease-in-out p-2 nav-hover-btn"
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // Adjust offset as needed
+                  duration={600}
+                  className="flex items-center justify-center  text-base  text-wheat-white font-normal tracking-tight transition duration-150 ease-in-out p-2 nav-hover-btn cursor-pointer"
                 >
                   Home
-                </a>
-                <a
-                  href="#services"
-                  className="flex items-center justify-center  text-base text-wheat-white  font-normal tracking-tight transition duration-150 ease-in-out p-2 nav-hover-btn"
+                </Link>
+                <Link
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // Adjust offset as needed
+                  duration={600}
+                  className="flex items-center justify-center  text-base text-wheat-white  font-normal tracking-tight transition duration-150 ease-in-out p-2 nav-hover-btn cursor-pointer"
                 >
                   Services
-                </a>
-                <a
-                  href="/"
-                  className="flex items-center justify-center  text-base text-wheat-white  font-normal tracking-tight transition duration-150 ease-in-out p-2 nav-hover-btn"
+                </Link>
+                <Link
+                  to="caseStudy"
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // Adjust offset as needed
+                  duration={600}
+                  className="flex items-center justify-center  text-base text-wheat-white  font-normal tracking-tight transition duration-150 ease-in-out p-2 nav-hover-btn cursor-pointer"
                 >
                   CaseStudy
-                </a>
+                </Link>
                 <button className="px-6 py-3 rounded-lg font-normal border text-sm  text-white border-gra border-gradient-to-r from-btn-purple to-btn-secondary nav-hover-primary-btn">
                   Get in Touch
                 </button>
@@ -52,9 +65,7 @@ function Hero() {
                     strings: ["Experiences,"],
                     autoStart: true,
                     loop: true,
-                    
                   }}
-                  
                 />
               </div>
               <div className="mt-6 text-lg lg:text-4xl font-light text-wheat-white antialiased">
