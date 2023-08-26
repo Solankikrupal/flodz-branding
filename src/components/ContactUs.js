@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactUs() {
   return (
-    <section class="pt-8 px-5 lg:pt-16 lg:px-10 pb-12 lg:pb-24 bg-contact-us-section">
+    <section class="pt-8 px-5 lg:pt-16 lg:px-10 pb-12 lg:pb-24 bg-contact-us-section " id="contact-us">
       <div class="grid lg:grid-cols-12">
         <div class="col-span-6 pb-4 lg:pb-0">
           <h1 className="text-4xl font-bold tracking-tight leading-none xl:text-4xl text-wheat-white mb-1">
@@ -15,7 +15,7 @@ function ContactUs() {
 
         <div class="col-span-6  items-center justify-start">
           <div class="lg:mx-auto w-full max-w-lg">
-            <form action="https://api.web3forms.com/submit">
+            <form action="/">
               <input
                 type="hidden"
                 name="access_key"
