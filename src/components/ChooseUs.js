@@ -74,6 +74,7 @@ function ChooseUs() {
         pauseOnClick
         direction={"left"}
         speed={50}
+        loop={50}
         className="flex items-center justify-center pt-14"
       >
         <img src="/svg/fueling-success.svg" alt="" />
