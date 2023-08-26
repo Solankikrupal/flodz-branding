@@ -8,7 +8,7 @@ module.exports = {
         "wheat-white": "#F3EFEF",
         "btn-purple": "#8E64FF",
         "btn-secondary": "#ffffff0a",
-        "title-tag":"#D9D9D9",
+        "title-tag": "#D9D9D9",
         "title-gradient":
           "linear-gradient(124deg, rgba(0, 0, 0, 0.00) 0%, #63E 23.63%, #FFF 100%)",
       },
@@ -28,6 +28,8 @@ module.exports = {
       },
       backgroundColor: {
         "custom-bg": "lightgray", // Add your custom background color here
+        "btn-hover-gradient":
+          "linear-gradient(270deg, rgba(0, 0, 0, 0.00) 0%, rgba(63, 32, 148, 0.18) 36.00%, rgba(102, 51, 238, 0.12) 74.30%, #FFF 100%)",
       },
       backgroundSize: {
         "custom-size": "100.528% 100.135%", // Add your custom background size here
