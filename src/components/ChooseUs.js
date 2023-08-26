@@ -69,7 +69,13 @@ function ChooseUs() {
           </div>
         </div>
       </div>
-      <Marquee speed={50} className="flex items-center justify-center pt-14">
+      <Marquee
+        pauseOnHover
+        pauseOnClick
+        direction={"left"}
+        speed={50}
+        className="flex items-center justify-center pt-14"
+      >
         <img src="/svg/fueling-success.svg" alt="" />
       </Marquee>
     </section>
