@@ -22,7 +22,7 @@ function Hero() {
                   Home
                 </a>
                 <a
-                  href="/"
+                  href="#services"
                   className="flex items-center justify-center  text-base text-wheat-white  font-normal tracking-tight transition duration-150 ease-in-out p-2 nav-hover-btn"
                 >
                   Services
@@ -52,7 +52,9 @@ function Hero() {
                     strings: ["Experiences,"],
                     autoStart: true,
                     loop: true,
+                    
                   }}
+                  
                 />
               </div>
               <div className="mt-6 text-lg lg:text-4xl font-light text-wheat-white antialiased">

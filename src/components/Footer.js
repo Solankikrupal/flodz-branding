@@ -48,21 +48,21 @@ function Footer() {
           <div class="flex flex-col items-start mt-5 space-y-2">
             <a
               href="/"
-              class="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+              class="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500 font-serif-custom"
             >
               <img src="/svg/location.svg" className="mr-2" alt="" />
               18896 70 Avenue, Surrey, BC Canada V4N 5K3
             </a>
             <a
               href="/"
-              class="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+              class="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500 font-serif-custom"
             >
               <img src="/svg/phone.svg" className="mr-2" alt="" />
               6047685109
             </a>
             <a
               href="/"
-              class="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+              class="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500 font-serif-custom"
             >
               <img src="/svg/phone.svg" className="mr-2" alt="" />
               2364561132

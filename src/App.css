@@ -140,3 +140,7 @@ body {
     transform: translateX(-100%);
   }
 }
+
+.font-serif-custom{
+  font-family: 'Inter', sans-serif !important;
+}

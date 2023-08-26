@@ -19,7 +19,7 @@ function HeaderSlider() {
   ];
   return (
     <section className="px-10">
-      <div className=" relative w-100 py-2 md:py-6 flex items-center overflow-hidden grid grid-cols-12 ">
+      <div className=" relative w-100 py-2 md:py-4 3xl:py-6 flex items-center overflow-hidden grid grid-cols-12 ">
         <div className="flex items-center col-span-5 md:col-span-1 lg:col-span-2 xl:col-span-1">
           <svg
             width="8"
