@@ -1,6 +1,5 @@
 import React from "react";
-
-
+import Typewriter from "typewriter-effect";
 
 function Hero() {
   return (
@@ -46,8 +45,15 @@ function Hero() {
               <div className="text-2xl lg:text-7xl font-bold  leading-none text-wheat-white inline">
                 We elevate
               </div>
-              <div className="text-2xl lg:text-7xl font-bold  leading-none text-wheat-white inline ml-2 title-text-gradient">
-                Experiences,
+
+              <div className="text-2xl lg:text-7xl font-bold  leading-none inline ml-2 title-text-gradient">
+                <Typewriter
+                  options={{
+                    strings: ["Experiences,"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
               </div>
               <div className="mt-6 text-lg lg:text-4xl font-light text-wheat-white antialiased">
                 Propelling brilliance to new heights!

@@ -51,21 +51,21 @@ function Footer() {
               class="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
             >
               <img src="/svg/location.svg" className="mr-2" alt="" />
-              Seestrasse 21, Zurich
+              18896 70 Avenue, Surrey, BC Canada V4N 5K3
             </a>
             <a
               href="/"
               class="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
             >
-              <img src="/svg/mail.svg" className="mr-2" alt="" />
-              biagiotti@qodeinteractive.com
+              <img src="/svg/phone.svg" className="mr-2" alt="" />
+              6047685109
             </a>
             <a
               href="/"
               class="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
             >
-              <img src="/svg/phone.svg" className="mr-2" alt="" />+ 99 411 725
-              39 12
+              <img src="/svg/phone.svg" className="mr-2" alt="" />
+              2364561132
             </a>
           </div>
         </div>
