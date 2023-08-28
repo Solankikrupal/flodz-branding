@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .custom-backgrond {
@@ -10,48 +10,137 @@ body {
 }
 
 .text-custom-gradient {
-  background: linear-gradient(143deg, #636262 0%, #C8C8C8 58.26%, #DCDCDC 74.63%, #C8C8C8 89.24%, #5B5A5A 100%);
+  background: linear-gradient(
+    143deg,
+    #636262 0%,
+    #c8c8c8 58.26%,
+    #dcdcdc 74.63%,
+    #c8c8c8 89.24%,
+    #5b5a5a 100%
+  );
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
 
 .text-custom-gradient-secondary {
-  background: linear-gradient(124deg, rgba(0, 0, 0, 0) 0%, #63E 1%, #FFF 20%);
+  background: linear-gradient(124deg, rgba(0, 0, 0, 0) 0%, #63e 1%, #fff 20%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-custom-gradient-white {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 0.76%, rgba(255, 255, 255, 1) 20%);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.3) 0.76%,
+    rgba(255, 255, 255, 1) 20%
+  );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-custom-gradient-pink {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 62.00%, rgba(255, 255, 255, 0.10) 100%);
-  box-shadow: 1px 1px 3px 0px rgba(142, 100, 255, 1);
+  border-radius: 1920px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 100%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
 }
 
 .bg-contact-us-section {
-  background: var(--grad, linear-gradient(180deg, rgba(0, 0, 0, 0.00) 1%, rgb(102, 51, 238, 1) 100%, rgb(255, 255, 255, 0.712) 100%));
+  background: var(
+    --grad,
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 1%,
+      rgb(102, 51, 238, 1) 100%,
+      rgb(255, 255, 255, 0.712) 100%
+    )
+  );
 }
 
 .custom-border-primary {
   border-radius: 33.6px;
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 0%, rgba(102, 51, 238, 0.00) 53.13%, rgba(102, 51, 238, 0.03) 100%);
-  mix-blend-mode: luminosity;
-  backdrop-filter: blur(26.5px);
+  box-shadow: 1px 1px 1px 1px rgba(102, 51, 238, 0.3);
 }
 
 .custom-backgrond-footer {
-  background: url("/public/images/footer-bg.png") no-repeat, lightgray -34.548px -49.808px / 90.468% 166.263% linear-gradient(rgba(0, 0, 0, 1) 100%, rgba(142, 100, 255, 1) 100%);
+  background: url("/public/images/footer-bg.png") no-repeat,
+    lightgray -34.548px -49.808px / 90.468% 166.263%
+      linear-gradient(rgba(0, 0, 0, 1) 100%, rgba(142, 100, 255, 1) 100%);
   background-size: cover;
 }
 
 .ad-slider-background-primary {
-  background: linear-gradient(101deg, #63E 80%, #FFF 120%);
+  background: linear-gradient(101deg, #63e 80%, #fff 120%);
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.35);
+}
+
+.nav-hover-btn:hover {
+  border-radius: 8px;
+  background-color: white;
+  background: linear-gradient(
+    270deg,
+    rgba(63, 32, 148, 0.18) 100%,
+    rgba(102, 51, 238, 0.12) 74.3%,
+    #fff 100%
+  );
+}
+
+.nav-hover-primary-btn:hover {
+  border-radius: 8px;
+  background: var(
+    --grad,
+    linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, #63e 100%, #fff 100%)
+  );
+  border-color: transparent;
+}
+
+.title-text-gradient {
+  background: linear-gradient(124deg, #63e 5.63%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Typewriter{
+  background: linear-gradient(124deg, #63e 5.63%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* AdSlider.css */
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  animation: marquee 30s linear infinite;
+  position: absolute;
+}
+
+.marquee-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Adjust as needed */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.font-serif-custom{
+  font-family: 'Inter', sans-serif !important;
 }

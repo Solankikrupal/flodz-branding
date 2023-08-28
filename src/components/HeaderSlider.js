@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/no-distracting-elements */
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 function HeaderSlider() {
   let data = [
@@ -18,8 +19,8 @@ function HeaderSlider() {
   ];
   return (
     <section className="px-10">
-      <div className=" relative w-100 py-2 md:py-6 flex items-center overflow-hidden grid grid-cols-12">
-        <div className="flex items-center col-span-5 md:col-span-1">
+      <div className=" relative w-100 py-2 md:py-4 3xl:py-6 flex items-center overflow-hidden grid grid-cols-12 ">
+        <div className="flex items-center col-span-5 md:col-span-1 lg:col-span-2 xl:col-span-1">
           <svg
             width="8"
             height="9"
@@ -40,8 +41,14 @@ function HeaderSlider() {
             Active to Serve
           </span>
         </div>
-        <marquee className="col-span-7 md:col-span-11">
-          <div className="flex justify-center items-center">
+        <Marquee
+          className="col-span-7 md:col-span-11 lg:col-span-10 xl:col-span-11"
+          pauseOnHover
+          pauseOnClick
+          direction={"left"}
+          speed={50}
+        >
+          <div className="flex justify-center items-center ">
             {data.map((item) => (
               <div className="flex items-center mx-3">
                 <img src="/svg/bolt-purple.svg" alt="" />
@@ -54,7 +61,7 @@ function HeaderSlider() {
               </div>
             ))}
           </div>
-        </marquee>
+        </Marquee>
       </div>
     </section>
   );

@@ -22,7 +22,7 @@ function CaseStudy() {
     },
   ];
   return (
-    <section className="pt-8 md:pt-16 px-5 md:px-10 pb-12 md:pb-24">
+    <section className="pt-8 md:pt-16 px-5 md:px-10 pb-12 md:pb-24" id="caseStudy">
       <div className="flex flex-wrap -mx-4">
         <div className="w-full px-4">
           <div className="">

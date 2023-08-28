@@ -1,4 +1,5 @@
 import React from "react";
+import Marquee from "react-fast-marquee";
 
 function ChooseUs() {
   let data = [
@@ -17,7 +18,7 @@ function ChooseUs() {
   ];
 
   return (
-    <section className="pt-8 lg:pt-24">
+    <section className="pt-8 pt-12 3xl:pt-24">
       <div className="lg:grid mx-auto lg:grid-cols-1 xl:grid-cols-2 lg:pr-10 items-center gap-24">
         <div className="lg:mt-0  lg:flex rounded-lg">
           <img
@@ -68,6 +69,16 @@ function ChooseUs() {
           </div>
         </div>
       </div>
+      <Marquee
+        pauseOnHover
+        pauseOnClick
+        direction={"left"}
+        speed={50}
+        loop={50}
+        className="flex items-center justify-center pt-14"
+      >
+        <img src="/svg/fueling-success.svg" alt="" />
+      </Marquee>
     </section>
   );
 }

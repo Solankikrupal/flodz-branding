@@ -1,48 +1,81 @@
 import React from "react";
+import { Link } from "react-scroll";
+import Typewriter from "typewriter-effect";
 
 function Hero() {
   return (
     <div className="xl:min-h-screen min-w-full  flex flex-col justify-center  px-5 lg:px-10 pb-10 ">
       <div className="relative w-full mx-auto">
         <div className="relative  custom-backgrond shadow-lg rounded-3xl xl:min-h-screen">
-          <div className="px-2 lg:px-20 py-6 z-30">
+          <div className="px-2 lg:px-6 3xl:px-20 py-6 z-30">
             {/* <!-- nav --> */}
-            <div className="flex items-center justify-between ">
+            <div className="flex items-center justify-between " id="home">
               <div className="flex items-center justify-center">
                 <div className="flex items-center justify-center text-3xl font-bold text-true-gray-800">
                   <img alt="" src="svg/Logo.svg"></img>
                 </div>
               </div>
               <div className="hidden md:flex items-center justify-center gap-3">
-                <a
-                  href="/"
-                  className="flex items-center justify-center  text-base  text-wheat-white font-normal tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out p-2 text-[#C8C6C6]"
+                <Link
+                  to="home"
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // Adjust offset as needed
+                  duration={600}
+                  className="flex items-center justify-center  text-base  text-wheat-white font-normal tracking-tight transition duration-150 ease-in-out p-2 nav-hover-btn cursor-pointer"
                 >
                   Home
-                </a>
-                <a
-                  href="/"
-                  className="flex items-center justify-center  text-base text-wheat-white  font-normal tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out p-2 text-[#C8C6C6]"
+                </Link>
+                <Link
+                  to="services"
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // Adjust offset as needed
+                  duration={600}
+                  className="flex items-center justify-center  text-base text-wheat-white  font-normal tracking-tight transition duration-150 ease-in-out p-2 nav-hover-btn cursor-pointer"
                 >
                   Services
-                </a>
-                <a
-                  href="/"
-                  className="flex items-center justify-center  text-base text-wheat-white  font-normal tracking-tight hover:text-cool-gray-600 transition duration-150 ease-in-out p-2 text-[#C8C6C6]"
+                </Link>
+                <Link
+                  to="caseStudy"
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // Adjust offset as needed
+                  duration={600}
+                  className="flex items-center justify-center  text-base text-wheat-white  font-normal tracking-tight transition duration-150 ease-in-out p-2 nav-hover-btn cursor-pointer"
                 >
                   CaseStudy
-                </a>
-                <button className="px-6 py-3 rounded-lg font-normal border text-sm  text-white border-gra border-gradient-to-r from-btn-purple to-btn-secondary">
-                  Get in Touch
-                </button>
+                </Link>
+                <Link
+                  to="contact-us"
+                  spy={true}
+                  smooth={true}
+                  offset={-70} // Adjust offset as needed
+                  duration={600}
+                  className="flex items-center justify-center  text-base text-wheat-white  font-normal tracking-tight transition duration-150 ease-in-out p-2 nav-hover-btn cursor-pointer"
+                >
+                  <button className="px-6 py-3 rounded-lg font-normal border text-sm  text-white border-gra border-gradient-to-r from-btn-purple to-btn-secondary nav-hover-primary-btn">
+                    Get in Touch
+                  </button>
+                </Link>
               </div>
             </div>
             {/* <!-- /nav --> */}
 
             {/* <!-- hero section --> */}
-            <div className="text-center mt-32 xl:mt-64">
-              <div className="text-3xl lg:text-7xl font-bold  leading-none text-wheat-white">
+            <div className="text-center mt-32 xl:mt-26">
+              <div className="text-2xl lg:text-7xl font-bold  leading-none text-wheat-white inline">
                 We elevate
+              </div>
+
+              <div className="text-2xl lg:text-7xl font-bold  leading-none inline ml-2 title-text-gradient">
+                <Typewriter
+                  options={{
+                    strings: ["Experiences,"],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
               </div>
               <div className="mt-6 text-lg lg:text-4xl font-light text-wheat-white antialiased">
                 Propelling brilliance to new heights!
@@ -52,54 +85,72 @@ function Hero() {
                 Improvement. Embrace a journey of constant evolution, where
                 progress knows no bounds.
               </div>
-              <button className="text-sm mt-6 mx-1 px-4 lg:px-8 py-4 rounded-lg font-normal tracking-wide bg-btn-purple text-white outline-none">
-                Get a Quote
-                <svg
-                  className="inline"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.83333 14.1667L14.1667 5.83337"
-                    stroke="white"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M5.83333 5.83337H14.1667V14.1667"
-                    stroke="white"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
-              <button className=" text-sm mt-6 mx-1 px-4 lg:px-8 py-4 rounded-lg font-normal tracking-wide border text-white bg-btn-secondary border-wheat-white ">
-                Get in Touch
-                <svg
-                  className="inline"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.83333 14.1667L14.1667 5.83337"
-                    stroke="white"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M5.83333 5.83337H14.1667V14.1667"
-                    stroke="white"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </button>
+              <Link
+                to="services"
+                spy={true}
+                smooth={true}
+                offset={-70} // Adjust offset as needed
+                duration={600}
+                className=""
+              >
+                <button className="group text-sm mt-6 mx-1 px-4 lg:px-8 py-4 rounded-lg font-normal tracking-wide bg-btn-purple text-white outline-none ">
+                  Get a Quote
+                  <svg
+                    className="inline transition duration-150 ease-in-out group-hover:scale-150"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.83333 14.1667L14.1667 5.83337"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5.83333 5.83337H14.1667V14.1667"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </Link>
+              <Link
+                to="contact-us"
+                spy={true}
+                smooth={true}
+                offset={-70} // Adjust offset as needed
+                duration={600}
+                className=""
+              >
+                <button className="group text-sm mt-6 mx-1 px-4 lg:px-8 py-4 rounded-lg font-normal tracking-wide border text-white bg-btn-secondary border-wheat-white ">
+                  Get in Touch
+                  <svg
+                    className="inline transition duration-150 ease-in-out group-hover:scale-150"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.83333 14.1667L14.1667 5.83337"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M5.83333 5.83337H14.1667V14.1667"
+                      stroke="white"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </button>
+              </Link>
             </div>
 
             {/* <!-- /hero section --> */}
