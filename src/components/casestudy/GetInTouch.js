@@ -16,8 +16,7 @@ function GetInTouch() {
 
   return (
     <section
-      className="pt-8 lg:pt-16 pl-5 lg:pl-10 pb-12 lg:pb-24"
-      id="services"
+      className="pt-8 lg:pt-16 px-5 lg:px-10 pb-12 lg:pb-24"
     >
       <div className="bg-[#080807] rounded-2xl ">
         <div className="grid lg:grid-cols-12">

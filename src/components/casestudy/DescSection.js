@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function DescSection() {
   const { pathname } = document.location;
@@ -49,11 +49,7 @@ function DescSection() {
     },
     // Add more case studies as needed
   };
-
-  const data = useMemo(() => {
-    return dataMap[pathname] || null;
-  }, [pathname]);
-
+  const data = dataMap[pathname] || [];
   useEffect(() => {
     if (data) {
       setTagBottomContent(data.tagBottomContent);

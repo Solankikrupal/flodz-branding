@@ -129,10 +129,7 @@ function ProblemFaced() {
   const data = dataMap[pathname] || [];
 
   return (
-    <section
-      className="pt-8 lg:pt-16 px-5 lg:px-10 pb-12 lg:pb-24"
-      id="services"
-    >
+    <section className="pt-8 lg:pt-16 px-5 lg:px-10 pb-12 lg:pb-24">
       <div className="bg-[#080807] rounded-2xl px-4 py-8 lg:px-10 lg:py-20">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">
