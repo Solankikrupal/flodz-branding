@@ -10,6 +10,9 @@ import GetInTouch from "../components/casestudy/GetInTouch";
 function App() {
   return (
     <>
+      <head>
+        <title>Flodz Branding - Case Study</title>
+      </head>
       <Layout>
         <Hero>
           <HeroHeader />
@@ -18,7 +21,7 @@ function App() {
         <ProblemFaced />
         <QuoteSection />
         <DescSection />
-        <GetInTouch/>
+        <GetInTouch />
       </Layout>
     </>
   );
