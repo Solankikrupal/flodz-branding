@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function CaseStudy() {
   let data = [
@@ -59,7 +60,7 @@ function CaseStudy() {
 
       <div class="pt-14 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
         {data.map((item) => (
-          <div class=" rounded-xl  transform hover:scale-105 transition duration-500">
+          <Link to={'/case-study'} class=" rounded-xl  transform hover:scale-105 transition duration-500">
             <div class="relative">
               <img class="w-full rounded-xl" src={item.img} alt="Colors" />
             </div>
@@ -76,7 +77,7 @@ function CaseStudy() {
             <p class="text-base font-normal text-[#D9D9D9] opacity-30 font-serif mt-2">
               {item.disc}
             </p>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
