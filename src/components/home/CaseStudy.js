@@ -1,31 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from "react-responsive-carousel";
 
 function CaseStudy() {
   let data = [
     {
       img: "/images/project01.png",
-      title: "Find Roommates with Similar Tastes and Styles as You",
-      disc: "Real Estate",
-      tags: [
-        { tag: "Housing" },
-        { tag: "Mobile App" },
-        { tag: "UI UX Design" },
-      ],
+      title: "Drive sales performance in the automotive industry",
+      disc: "Automotive Sales",
+      tags: [{ tag: "Auto" }, { tag: "Mobile App" }, { tag: "UI UX Design" }],
     },
     {
       img: "/images/project02.png",
       title:
-        "Embark on a journey of personal growth with a rich tapestry of insightful articles ",
-      disc: "Personal Development",
+        "Explore a vibrant community redefining the way we experience literature",
+      disc: "Infotainment",
       tags: [{ tag: "Media" }, { tag: "Web App" }, { tag: "UI UX Design" }],
     },
     {
       img: "/images/project03.png",
-      title: "Unlock Your Hidden Talent with a Community of Expert Trainers",
-      disc: "Recreation",
+      title: "Empower yourself to take control of your health journey",
+      disc: "Doctor Consultation",
       tags: [
-        { tag: "Lifestyle" },
+        { tag: "Healthcare" },
         { tag: "Mobile App" },
         { tag: "UI UX Design" },
       ],
