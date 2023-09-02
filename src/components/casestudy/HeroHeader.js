@@ -38,13 +38,7 @@ function HeroHeader() {
         <div className="grid  md:grid-cols-2">
           <div className="text-left">
             <div className="text-2xl lg:text-7xl font-bold  leading-none inline ml-2 title-text-gradient">
-              <Typewriter
-                options={{
-                  strings: [data.project_name],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
+              {data.project_name}
             </div>
             <div className="mt-6 lg:text-xl font-light text-wheat-white antialiased mx-auto max-w-2xl">
               {data.desc}
