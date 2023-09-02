@@ -8,7 +8,7 @@ import DescSection from "../components/casestudy/DescSection";
 import GetInTouch from "../components/casestudy/GetInTouch";
 import ProjectMidBanner from "../components/casestudy/ProjectMidBanner";
 
-function App() {
+function CaseStudyPage() {
   return (
     <>
       <Layout>
@@ -26,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default CaseStudyPage;
