@@ -5,25 +5,37 @@ function CaseStudy() {
   let data = [
     {
       img: "/images/project01.png",
-      title: "Let's inspire the future with a free online academy",
-      disc: "Skybox x Samsung",
-      tags: [{ tag: "Design" }, { tag: "Build" }, { tag: "Automate" }],
+      title: "Find Roommates with Similar Tastes and Styles as You",
+      disc: "Real Estate",
+      tags: [
+        { tag: "Housing" },
+        { tag: "Mobile App" },
+        { tag: "UI UX Design" },
+      ],
     },
     {
       img: "/images/project02.png",
-      title: "Let's inspire the future with a free online academy",
-      disc: "Skybox x Samsung",
-      tags: [{ tag: "Design" }, { tag: "Build" }, { tag: "Automate" }],
+      title:
+        "Embark on a journey of personal growth with a rich tapestry of insightful articles ",
+      disc: "Personal Development",
+      tags: [{ tag: "Media" }, { tag: "Web App" }, { tag: "UI UX Design" }],
     },
     {
       img: "/images/project03.png",
-      title: "Let's inspire the future with a free online academy",
-      disc: "Skybox x Samsung",
-      tags: [{ tag: "Design" }, { tag: "Build" }, { tag: "Automate" }],
+      title: "Unlock Your Hidden Talent with a Community of Expert Trainers",
+      disc: "Recreation",
+      tags: [
+        { tag: "Lifestyle" },
+        { tag: "Mobile App" },
+        { tag: "UI UX Design" },
+      ],
     },
   ];
   return (
-    <section className="pt-8 md:pt-16 px-5 md:px-10 pb-12 md:pb-24" id="caseStudy">
+    <section
+      className="pt-8 md:pt-16 px-5 md:px-10 pb-12 md:pb-24"
+      id="caseStudy"
+    >
       <div className="flex flex-wrap -mx-4">
         <div className="w-full px-4">
           <div className="">
@@ -58,23 +70,30 @@ function CaseStudy() {
         </div>
       </div>
 
-      <div class="pt-14 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
-        {data.map((item) => (
-          <Link to={'/case-study'} class=" rounded-xl  transform hover:scale-105 transition duration-500">
-            <div class="relative">
-              <img class="w-full rounded-xl" src={item.img} alt="Colors" />
+      <div className="pt-14 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
+        {data.map((item, index) => (
+          <Link
+            key={index}
+            to={"/case-study/0" + index}
+            className=" rounded-xl  transform hover:scale-105 transition duration-500"
+          >
+            <div className="relative">
+              <img className="w-full rounded-xl" src={item.img} alt="Colors" />
             </div>
             <div className="mt-2 mb-6">
-              {item.tags.map((item) => (
-                <div class="text-xs inline-flex items-center font-normal leading-sm  px-2 py-1 text-custom-gradient-pink text-wheat-white rounded-full mx-1">
+              {item.tags.map((item, index) => (
+                <div
+                  key={index}
+                  className="text-xs inline-flex items-center font-normal leading-sm  px-2 py-1 text-custom-gradient-pink text-wheat-white rounded-full mx-1"
+                >
                   {item.tag}
                 </div>
               ))}
             </div>
-            <h1 class="text-custom-gradient text-xl font-bold cursor-pointer">
+            <h1 className="text-custom-gradient text-xl font-bold cursor-pointer">
               {item.title}
             </h1>
-            <p class="text-base font-normal text-[#D9D9D9] opacity-30 font-serif mt-2">
+            <p className="text-base font-normal text-[#D9D9D9] opacity-30 font-serif mt-2">
               {item.disc}
             </p>
           </Link>

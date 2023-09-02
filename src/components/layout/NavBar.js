@@ -8,7 +8,7 @@ function NavBar() {
         <div className="flex items-center justify-center">
           <div className="flex items-center justify-center text-3xl font-bold text-true-gray-800">
             <Direct to={"/"}>
-              <img alt="" src="svg/Logo.svg"></img>
+              <img alt="" src="/svg/Logo.svg"></img>
             </Direct>
           </div>
         </div>

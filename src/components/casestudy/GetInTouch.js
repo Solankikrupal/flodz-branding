@@ -20,8 +20,8 @@ function GetInTouch() {
       id="services"
     >
       <div className="bg-[#080807] rounded-2xl ">
-        <div className="grid grid-cols-12">
-          <div className=" col-span-6 pl-4 py-8 lg:pl-10 lg:py-20">
+        <div className="grid lg:grid-cols-12">
+          <div className=" lg:col-span-6 pl-4 py-8 lg:pl-10 lg:py-20">
             <div className="text-left">
               <h2 className="text-xl lg:text-2xl font-normal mb-2 text-custom-gradient">
                 Got an Idea?
@@ -30,11 +30,9 @@ function GetInTouch() {
                 Lets build it Together
               </div>
               <div className="mt-6 lg:text-md font-light text-wheat-white opacity-50 max-w-2xl">
-                Explore how ZAP partnered with a dynamic startup in the
-                automotive industry to launch a revolutionary mobile
-                application. In this case study, We delve into the strategic
-                digital marketing approach that drove rapid adoption and success
-                for this groundbreaking app.
+                Unlocking Success: Journey with us as we unveil the driving
+                force behind our revolutionary mobile app and the logo that
+                encapsulates its power.
               </div>
               <Link
                 to="contact-us"
@@ -57,21 +55,21 @@ function GetInTouch() {
                     <path
                       d="M5.83333 14.1667L14.1667 5.83337"
                       stroke="white"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                     <path
                       d="M5.83333 5.83337H14.1667V14.1667"
                       stroke="white"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </button>
               </Link>
             </div>
           </div>
-          <div className=" col-span-6 overflow-hidden">
+          <div className=" lg:col-span-6 overflow-hidden sm:none md:none">
             <>
               <div className="bg-white relative w-100 py-3 3xl:py-6 flex items-center skew-y-[30deg] translate-y-[110px]">
                 <Marquee
@@ -81,8 +79,11 @@ function GetInTouch() {
                   speed={50}
                 >
                   <div className="flex justify-center items-center">
-                    {data.map((item) => (
-                      <div className="flex items-center mx-3 skew-x-[-25deg]">
+                    {data.map((item, index) => (
+                      <div
+                        key={index}
+                        className="flex items-center mx-3 skew-x-[-25deg]"
+                      >
                         <img src="/svg/bolt-black.svg" alt="" />
                         <p className="ml-3 text-xs lg:text-lg font-normal text-[#080807]">
                           {item}
@@ -96,8 +97,11 @@ function GetInTouch() {
             <div className="bg-white relative w-100 py-3 3xl:py-6 flex items-center ad-slider-background-primary skew-y-[-36.22deg] translate-y-[200px] 3xl:translate-y-[200px]">
               <Marquee pauseOnHover pauseOnClick direction={"left"} speed={50}>
                 <div className="flex justify-center items-center">
-                  {data.map((item) => (
-                    <div className="flex items-center mx-3 skew-x-[26.22deg]">
+                  {data.map((item, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center mx-3 skew-x-[30.22deg]"
+                    >
                       <img src="/svg/bolt-white.svg" alt="" />
                       <p className="ml-3 text-xs lg:text-lg font-normal text-white">
                         {item}

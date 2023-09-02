@@ -9,12 +9,16 @@ import CaseStudyPage from "./pages/CaseStudyPage";
 import ContactUsPage from "./pages/ContactUsPage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/case-study" element={<CaseStudyPage />} />
+        <Route path="/case-study/00" element={<CaseStudyPage />} />
+        <Route path="/case-study/01" element={<CaseStudyPage />} />
+        <Route path="/case-study/02" element={<CaseStudyPage />} />
+        <Route path="/case-study/03" element={<CaseStudyPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
         {/* Add more routes here */}
       </Routes>

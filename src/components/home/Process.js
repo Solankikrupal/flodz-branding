@@ -82,8 +82,8 @@ function Process() {
         </div>
       </div>
       <div className="grid md:grid-cols-2 xl:grid-cols-3 pt-16">
-        {data.map((item) => (
-          <div className="mt-6 lg:mt-0 ">
+        {data.map((item,index) => (
+          <div key={index} className="mt-6 lg:mt-0 ">
             <div className="">
               <div className="">
                 <img src={item.img} alt="" />
@@ -91,8 +91,8 @@ function Process() {
               <h4 className="font-semibold text-xl lg:text-3xl text-wheat-white my-6">
                 {item.title}
               </h4>
-              {item.details.map((item) => (
-                <div className="grid grid-cols-12 text-white mb-8 lg:pr-16">
+              {item.details.map((item,index) => (
+                <div key={index} className="grid grid-cols-12 text-white mb-8 lg:pr-16">
                   <div className="col-span-1 flex align-top justify-center pt-2 lg:pt-3">
                     <svg
                       width="8"

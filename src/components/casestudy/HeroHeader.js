@@ -3,25 +3,51 @@ import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
 
 function HeroHeader() {
+  const { pathname } = document.location;
+  const dataMap = {
+    "/case-study/00": {
+      project_name: "Igniting Growth",
+      desc: "Explore how ZAP partnered with a dynamic startup in the automotive industry to launch a revolutionary mobile application. In this case study, We delve into the strategic digital marketing approach that drove rapid adoption and success for this groundbreaking app.",
+      project_banner: "/images/case-study-banner-01.png",
+    },
+    "/case-study/01": {
+      project_name: "Engagement Elevator",
+      desc: "Explore a world of audiobooks, where seamless navigation, personalized recommendations, offline listening, exclusive titles, and a vibrant community redefine the way we experience literature.",
+      project_banner: "/images/case-study-banner-02.png",
+    },
+    "/case-study/02": {
+      project_name: "Revolutionizing Healthcare Experience",
+      desc: "Discover AidLink, where innovative design seamlessly intertwines with compassionate healthcare. From intuitive appointment booking to a secure health profile",
+      project_banner: "/images/case-study-banner-03.png",
+    },
+    "/case-study/03": {
+      project_name: "Redefined Co-Living",
+      desc: "Explore a world of audiobooks, where seamless navigation, personalized recommendations, offline listening, exclusive titles, and a vibrant community redefine the way we experience literature.",
+      project_banner: "/images/case-study-banner-04.png",
+    },
+    // Add more case studies as needed
+  };
+
+  const data = dataMap[pathname] || [];
+
+  // Use the data object as needed in your code
+
   return (
     <div className="text-center mt-32 xl:mt-26">
       <>
-        <div className="grid grid-cols-2">
+        <div className="grid  md:grid-cols-2">
           <div className="text-left">
             <div className="text-2xl lg:text-7xl font-bold  leading-none inline ml-2 title-text-gradient">
               <Typewriter
                 options={{
-                  strings: ["Igniting Growth"],
+                  strings: [data.project_name],
                   autoStart: true,
                   loop: true,
                 }}
               />
             </div>
             <div className="mt-6 lg:text-xl font-light text-wheat-white antialiased mx-auto max-w-2xl">
-              Explore how ZAP partnered with a dynamic startup in the automotive
-              industry to launch a revolutionary mobile application. In this
-              case study, We delve into the strategic digital marketing approach
-              that drove rapid adoption and success for this groundbreaking app.
+              {data.desc}
             </div>
             <Link
               to="services"
@@ -44,14 +70,14 @@ function HeroHeader() {
                   <path
                     d="M5.83333 14.1667L14.1667 5.83337"
                     stroke="white"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M5.83333 5.83337H14.1667V14.1667"
                     stroke="white"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
@@ -77,21 +103,21 @@ function HeroHeader() {
                   <path
                     d="M5.83333 14.1667L14.1667 5.83337"
                     stroke="white"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                   <path
                     d="M5.83333 5.83337H14.1667V14.1667"
                     stroke="white"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
                   />
                 </svg>
               </button>
             </Link>
           </div>
-          <div className="text-center relative w-full h-full">
-            <img className="m-auto" src="./images/hand-mockup.png" alt=""></img>
+          <div className="text-center relative w-full h-full pt-5 md:pt-0">
+            <img className="m-auto" src={data.project_banner} alt=""></img>
           </div>
         </div>
       </>

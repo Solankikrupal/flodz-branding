@@ -13,9 +13,6 @@ import Layout from "../components/layout/Layout";
 function App() {
   return (
     <>
-      <head>
-        <title>Flodz Branding - Home</title>
-      </head>
       <Layout>
         <Hero>
           <HeroHeader />

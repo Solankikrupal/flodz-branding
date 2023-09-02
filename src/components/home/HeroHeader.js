@@ -47,14 +47,14 @@ function HeroHeader() {
               <path
                 d="M5.83333 14.1667L14.1667 5.83337"
                 stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M5.83333 5.83337H14.1667V14.1667"
                 stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
@@ -80,14 +80,14 @@ function HeroHeader() {
               <path
                 d="M5.83333 14.1667L14.1667 5.83337"
                 stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M5.83333 5.83337H14.1667V14.1667"
                 stroke="white"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>

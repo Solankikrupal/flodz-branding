@@ -32,10 +32,10 @@ function ChooseUs() {
             Why Choose Us?
           </h1>
           <div className="md:grid md:grid-cols-2 xl:grid-cols-1">
-            {data.map((item) => (
+            {data.map((item,index) => (
               <div
                 className="grid grid-cols-12 text-white mb-8"
-                key={item.title}
+                key={index}
               >
                 <div className="col-span-1  pt-3">
                   <div className="flex align-top justify-center">

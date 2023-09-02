@@ -6,13 +6,11 @@ import ProblemFaced from "../components/casestudy/ProblemFaced";
 import QuoteSection from "../components/casestudy/QuoteSection";
 import DescSection from "../components/casestudy/DescSection";
 import GetInTouch from "../components/casestudy/GetInTouch";
+import ProjectMidBanner from "../components/casestudy/ProjectMidBanner";
 
 function App() {
   return (
     <>
-      <head>
-        <title>Flodz Branding - Case Study</title>
-      </head>
       <Layout>
         <Hero>
           <HeroHeader />
@@ -20,6 +18,7 @@ function App() {
         <Introduction />
         <ProblemFaced />
         <QuoteSection />
+        <ProjectMidBanner />
         <DescSection />
         <GetInTouch />
       </Layout>
