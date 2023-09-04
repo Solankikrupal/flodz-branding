@@ -78,7 +78,7 @@ function CaseStudy() {
             <div className="relative">
               <img className="w-full rounded-xl" src={item.img} alt="Colors" />
             </div>
-            <div className="mt-2 mb-6">
+            <div className="mt-6 mb-2">
               {item.tags.map((item, index) => (
                 <div
                   key={index}

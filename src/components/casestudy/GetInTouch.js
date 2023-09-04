@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import Marquee from "react-fast-marquee";
 
 function GetInTouch() {
@@ -22,18 +21,19 @@ function GetInTouch() {
         <div className="grid lg:grid-cols-12">
           <div className=" lg:col-span-6 pl-4 py-8 lg:pl-10 lg:py-20">
             <div className="text-left">
-              <h2 className="text-xl lg:text-2xl font-normal mb-2 text-custom-gradient">
+              <h2 className="text-xl lg:text-2xl font-normal text-custom-gradient">
                 Got an Idea?
               </h2>
-              <div className="text-2xl lg:text-5xl font-bold  leading-none inline ml-2 title-text-gradient">
-                Lets build it Together
+              <div className="text-2xl lg:text-7xl font-bold  leading-none inline  title-text-gradient">
+                Lets build it Toget
+                her
               </div>
               <div className="mt-6 lg:text-md font-light text-wheat-white opacity-50 max-w-2xl">
                 Unlocking Success: Journey with us as we unveil the driving
                 force behind our revolutionary mobile app and the logo that
                 encapsulates its power.
               </div>
-              <Link
+{/*               <Link
                 to="contact-us"
                 spy={true}
                 smooth={true}
@@ -65,7 +65,7 @@ function GetInTouch() {
                     />
                   </svg>
                 </button>
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className=" lg:col-span-6 overflow-hidden sm:none md:none">
@@ -99,7 +99,7 @@ function GetInTouch() {
                   {data.map((item, index) => (
                     <div
                       key={index}
-                      className="flex items-center mx-3 skew-x-[30.22deg]"
+                      className="flex items-center mx-3 skew-x-[29.22deg]"
                     >
                       <img src="/svg/bolt-white.svg" alt="" />
                       <p className="ml-3 text-xs lg:text-lg font-normal text-white">

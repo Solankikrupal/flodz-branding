@@ -36,11 +36,11 @@ function HeroHeader() {
     <div className="text-center mt-32 xl:mt-26">
       <>
         <div className="grid  md:grid-cols-2">
-          <div className="text-left">
-            <div className="text-2xl lg:text-7xl font-bold  leading-none inline ml-2 title-text-gradient">
+          <div className="text-left self-center">
+            <div className="text-2xl lg:text-7xl font-bold  leading-none inline title-text-gradient">
               {data.project_name}
             </div>
-            <div className="mt-6 lg:text-xl font-light text-wheat-white antialiased mx-auto max-w-2xl">
+            <div className="mt-6 lg:text-xl font-light text-wheat-white antialiased max-w-2xl">
               {data.desc}
             </div>
             <Link

@@ -44,7 +44,7 @@ function Introduction() {
 
   const data = dataMap[pathname] || [];
   return (
-    <section className="pt-8 md:pt-16 px-5 md:px-10 pb-12 md:pb-24">
+    <section className="pt-4 md:pt-4 px-5 md:px-10 pb-4 md:pb-4">
       <h1 className="text-2xl lg:text-4xl font-bold tracking-tight leading-none xl:text-4xl text-custom-gradient-white mb-8">
         Introduction
       </h1>

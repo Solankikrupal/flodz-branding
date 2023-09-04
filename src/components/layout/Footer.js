@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-scroll";
 function Footer() {
   return (
     /* <!-- component --> */
@@ -19,24 +19,24 @@ function Footer() {
           </p>
 
           <div className="flex flex-col items-start mt-5 space-y-2">
-            <a
+            <Link
               href="/"
-              className="text-white text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+              className="text-white text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400   hover:text-blue-500"
             >
               Privacy Policy
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
-              className="text-white text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+              className="text-white text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400   hover:text-blue-500"
             >
               About
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
-              className="text-white text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500"
+              className="text-white text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400   hover:text-blue-500"
             >
               Contact
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -46,27 +46,27 @@ function Footer() {
           </p>
 
           <div className="flex flex-col items-start mt-5 space-y-2">
-            <a
+            <Link
               href="/"
-              className="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500 font-serif-custom"
+              className="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400   hover:text-blue-500 font-serif-custom"
             >
               <img src="/svg/location.svg" className="mr-2" alt="" />
               18896 70 Avenue, Surrey, BC Canada V4N 5K3
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
-              className="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500 font-serif-custom"
+              className="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400   hover:text-blue-500 font-serif-custom"
             >
               <img src="/svg/phone.svg" className="mr-2" alt="" />
               6047685109
-            </a>
-            <a
+            </Link>
+            <Link
               href="/"
-              className="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400 hover:underline hover:text-blue-500 font-serif-custom"
+              className="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400  hover:text-blue-500 font-serif-custom"
             >
               <img src="/svg/phone.svg" className="mr-2" alt="" />
               2364561132
-            </a>
+            </Link>
           </div>
         </div>
       </div>
