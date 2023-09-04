@@ -20,19 +20,19 @@ function Footer() {
 
           <div className="flex flex-col items-start mt-5 space-y-2">
             <Link
-              href="/"
+               to="/"
               className="text-white text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400   hover:text-blue-500"
             >
               Privacy Policy
             </Link>
             <Link
-              href="/"
+               to="/"
               className="text-white text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400   hover:text-blue-500"
             >
               About
             </Link>
             <Link
-              href="/"
+               to="/"
               className="text-white text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400   hover:text-blue-500"
             >
               Contact
@@ -47,21 +47,21 @@ function Footer() {
 
           <div className="flex flex-col items-start mt-5 space-y-2">
             <Link
-              href="/"
+               to="/"
               className="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400   hover:text-blue-500 font-serif-custom"
             >
               <img src="/svg/location.svg" className="mr-2" alt="" />
               18896 70 Avenue, Surrey, BC Canada V4N 5K3
             </Link>
             <Link
-              href="/"
+               to="/"
               className="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400   hover:text-blue-500 font-serif-custom"
             >
               <img src="/svg/phone.svg" className="mr-2" alt="" />
               6047685109
             </Link>
             <Link
-              href="/"
+               to="/"
               className="text-white flex text-sm transition-colors duration-300 dark:text-gray-300 dark:hover:text-blue-400  hover:text-blue-500 font-serif-custom"
             >
               <img src="/svg/phone.svg" className="mr-2" alt="" />

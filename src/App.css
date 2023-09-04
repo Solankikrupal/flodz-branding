@@ -144,3 +144,29 @@ body {
 .font-serif-custom{
   font-family: 'Inter', sans-serif !important;
 }
+
+.slick-dots li{
+  width: 10px !important;
+  height: 10px !important;
+  background: #dcdcdc;
+  border-radius: 100%;
+  transition: all 0.2s ease-in;
+}
+.slick-dots li button::before{
+  content: "";
+  font-size: 0px !important;
+}
+.slick-dots li.slick-active{
+  width: 20px !important;
+  background-color: #63e;
+  border-radius: 18px;
+  transition: all 0.2s ease-in;
+}
+
+.slick-next:before {
+  content: '' !important;
+}
+
+.slick-prev:before {
+  content: '' !important;
+}
