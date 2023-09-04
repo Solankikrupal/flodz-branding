@@ -44,7 +44,6 @@ function ContactUs() {
   return (
     <section
       class="pt-8 px-5 lg:pt-16 lg:px-10 pb-12 lg:pb-24 bg-contact-us-section "
-      id="contact-us"
     >
       <div class="grid lg:grid-cols-12">
         <div class="col-span-6 pb-4 lg:pb-0">

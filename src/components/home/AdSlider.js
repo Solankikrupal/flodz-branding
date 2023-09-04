@@ -20,8 +20,11 @@ function AdSlider() {
         <div className="bg-white relative w-100 py-3 3xl:py-6 flex items-center skew-y-[9.971deg] ">
           <Marquee pauseOnHover pauseOnClick direction={"right"} speed={50}>
             <div className="flex justify-center items-center">
-              {data.map((item) => (
-                <div className="flex items-center mx-3 skew-x-[-9.971deg]">
+              {data.map((item, index) => (
+                <div
+                  key={index}
+                  className="flex items-center mx-3 skew-x-[-9.971deg]"
+                >
                   <img src="/svg/bolt-black.svg" alt="" />
                   <p className="ml-3 text-xs lg:text-lg font-normal text-[#080807]">
                     {item}
@@ -35,8 +38,11 @@ function AdSlider() {
       <div className="bg-white relative w-100 py-3 3xl:py-6 flex items-center ad-slider-background-primary skew-y-[-3.995deg] translate-y-[-25px] 3xl:translate-y-[-158px]">
         <Marquee pauseOnHover pauseOnClick direction={"left"} speed={50}>
           <div className="flex justify-center items-center">
-            {data.map((item) => (
-              <div className="flex items-center mx-3 skew-x-[3.995deg]">
+            {data.map((item, index) => (
+              <div
+                key={index}
+                className="flex items-center mx-3 skew-x-[3.995deg]"
+              >
                 <img src="/svg/bolt-white.svg" alt="" />
                 <p className="ml-3 text-xs lg:text-lg font-normal text-white">
                   {item}

@@ -1,13 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "./index.css";
+import "./App.css";
+import App from "./pages/App";
+import reportWebVitals from "./reportWebVitals";
+import CaseStudyPage from "./pages/CaseStudyPage";
+import ContactUsPage from "./pages/ContactUsPage";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/case-study/00" element={<CaseStudyPage />} />
+        <Route path="/case-study/01" element={<CaseStudyPage />} />
+        <Route path="/case-study/02" element={<CaseStudyPage />} />
+        <Route path="/case-study/03" element={<CaseStudyPage />} />
+        <Route path="/contact-us" element={<ContactUsPage />} />
+        {/* Add more routes here */}
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

@@ -49,8 +49,8 @@ function HeaderSlider() {
           speed={50}
         >
           <div className="flex justify-center items-center ">
-            {data.map((item) => (
-              <div className="flex items-center mx-3">
+            {data.map((item, index) => (
+              <div key={index} className="flex items-center mx-3">
                 <img src="/svg/bolt-purple.svg" alt="" />
                 <p className="ml-3 text-xs md:text-lg font-normal text-white mr-3">
                   {item.title}
