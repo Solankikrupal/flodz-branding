@@ -19,6 +19,14 @@ function QuoteSection() {
       quotes:
         "The main objective is impact on efficiency, customer engagement, & sales performance in automotive Industry",
     },
+    "/case-study/04": {
+      quotes:
+        "Solving complexity with elegant design: Streamlining content management, promoting engagement, and empowering our vibrant community",
+    },
+    "/case-study/05": {
+      quotes:
+        "Bringing individuals and trainers together in a supportive and inclusive environment",
+    },
     // Add more case studies as needed
   };
 

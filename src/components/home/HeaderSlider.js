@@ -46,7 +46,9 @@ function HeaderSlider() {
           pauseOnHover
           pauseOnClick
           direction={"left"}
-          speed={50}
+          speed={80}
+          continuous={true}
+          gradient={false}
         >
           <div className="flex justify-center items-center ">
             {data.map((item, index) => (

@@ -123,6 +123,67 @@ function ProblemFaced() {
         },
       ],
     },
+    "/case-study/04": {
+      problems: [
+        {
+          problem_name: "Content Management",
+          desc: "Growing library of articles, images, and multimedia content becomes complex without a management system",
+        },
+        {
+          problem_name: "User Engagement",
+          desc: "Low user engagement through comments and discussions",
+        },
+        {
+          problem_name: "Content Promotion",
+          desc: "Integration with social media platforms was missing for promotion of content",
+        },
+      ],
+      solutions: [
+        {
+          solution_name: "Archive and Pagination",
+          desc: "Pagination system for large archives to prevent overwhelming users with too much content ",
+        },
+        {
+          solution_name: "Quality Content",
+          desc: "Humanized the community with avatars and brief bios for regular contributors to improve visibility",
+        },
+        {
+          solution_name: "Boosted Performance",
+          desc: "Engaging headlines and dynamic visuals to draw attention to popular articles",
+        },
+      ],
+    },
+    "/case-study/05": {
+      problems: [
+        {
+          problem_name: "User Engagement",
+          desc: "Low user interest and engagement due to complex design",
+        },
+        {
+          problem_name: "Content Discovery",
+          desc: "Extensive libraries made users struggle to discover content that aligns with their interests",
+        },
+        {
+          problem_name: "Offline Access",
+          desc: "Unavailability of reliable offline access along with management systems",
+        },
+      ],
+      solutions: [
+        {
+          solution_name: "Comprehensive Toolkit",
+          desc: "Tailored for car sales professionals, equipped with tools to enhance efficiency.",
+        },
+        {
+          solution_name: "Enhanced Engagement",
+          desc: "App facilitated better interactions through personalized features & information.",
+        },
+        {
+          solution_name: "Boosted Performance",
+          desc: "Improved sales by empowering salespersons with data-driven insights.",
+        },
+      ],
+    },
+
     // Add more case studies as needed
   };
 

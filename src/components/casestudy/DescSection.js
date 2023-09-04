@@ -24,7 +24,7 @@ function DescSection() {
     },
 
     "/case-study/02": {
-      descBanner: "/svg/casestudy-desc02.svg",
+      descBanner: "/svg/casestudy-desc03.svg",
       tagLine: "Prioritize self-care",
       tagTitle: "Simplified Care",
       tagDesc: "Optimized Design Systems for Seamless Roommate Finding",
@@ -42,6 +42,28 @@ function DescSection() {
       sideBanner: "/images/side-banner-bg-03.png",
       sideTextTag: "Turning Wheels into Win",
       sideTextTitle: "Real Estate",
+    },
+    "/case-study/04": {
+      descBanner: "/svg/casestudy-desc05.svg",
+      tagLine: "SHare, learn and grow",
+      tagTitle: "Elegant Design",
+      tagDesc:
+        "Suggesting that your mobile app is seamlessly blending various functions to transform the automotive sales industry.",
+      tagBottomContent: "/svg/tag-bottom-content-05.svg",
+      sideBanner: "/images/side-banner-bg-04.png",
+      sideTextTag: "Write your mind",
+      sideTextTitle: "Personal Development",
+    },
+    "/case-study/05": {
+      descBanner: "/svg/casestudy-desc06.svg",
+      tagLine: "Master your hobby",
+      tagTitle: "Dynamically Powered",
+      tagDesc:
+        "Easy access to qualified trainers, personalized lessons with flexible scheduling",
+      tagBottomContent: "/svg/tag-bottom-content-06.svg",
+      sideBanner: "/images/side-banner-bg-04.png",
+      sideTextTag: "Champion your hidden talent",
+      sideTextTitle: "Lifestyle and Leisure",
     },
     // Add more case studies as needed
   };

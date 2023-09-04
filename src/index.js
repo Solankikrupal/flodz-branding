@@ -19,6 +19,8 @@ root.render(
         <Route path="/case-study/01" element={<CaseStudyPage />} />
         <Route path="/case-study/02" element={<CaseStudyPage />} />
         <Route path="/case-study/03" element={<CaseStudyPage />} />
+        <Route path="/case-study/04" element={<CaseStudyPage />} />
+        <Route path="/case-study/05" element={<CaseStudyPage />} />
         <Route path="/contact-us" element={<ContactUsPage />} />
         {/* Add more routes here */}
       </Routes>

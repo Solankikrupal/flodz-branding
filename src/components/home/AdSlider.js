@@ -17,13 +17,21 @@ function AdSlider() {
   return (
     <section className="pb-20 xl:pb-40 pt-24 xl:pt-44 overflow-hidden">
       <>
-        <div className="bg-white relative w-100 py-3 3xl:py-6 flex items-center skew-y-[9.971deg] ">
-          <Marquee pauseOnHover pauseOnClick direction={"right"} speed={50}>
-            <div className="flex justify-center items-center">
+        <div className="grid grid-cols-12 skew-y-[9.971deg]">
+          <Marquee
+            className="bg-white relative py-3 3xl:py-6 col-span-12 w-full"
+            gradient={false}
+            pauseOnHover
+            pauseOnClick
+            direction={"right"}
+            speed={100}
+            continuous={true}
+          >
+            <div className="flex justify-center items-center grid grid-cols-8 px-7">
               {data.map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-center mx-3 skew-x-[-9.971deg]"
+                  className="flex items-center skew-x-[-9.971deg] mx-3 col-span-1"
                 >
                   <img src="/svg/bolt-black.svg" alt="" />
                   <p className="ml-3 text-xs lg:text-lg font-normal text-[#080807]">
@@ -35,13 +43,21 @@ function AdSlider() {
           </Marquee>
         </div>
       </>
-      <div className="bg-white relative w-100 py-3 3xl:py-6 flex items-center ad-slider-background-primary skew-y-[-3.995deg] translate-y-[-25px] 3xl:translate-y-[-158px]">
-        <Marquee pauseOnHover pauseOnClick direction={"left"} speed={50}>
-          <div className="flex justify-center items-center">
+      <div className="grid grid-cols-12 skew-y-[-3.995deg] translate-y-[-25px] 3xl:translate-y-[-158px]">
+        <Marquee
+          className="bg-white relative py-3 3xl:py-6 ad-slider-background-primary col-span-12 w-full"
+          gradient={false}
+          pauseOnHover
+          pauseOnClick
+          direction={"left"}
+          speed={100}
+          continuous={true}
+        >
+          <div className="flex justify-center items-center grid grid-cols-8 px-7">
             {data.map((item, index) => (
               <div
                 key={index}
-                className="flex items-center mx-3 skew-x-[3.995deg]"
+                className="flex items-center skew-x-[3.995deg] mx-3 col-span-1"
               >
                 <img src="/svg/bolt-white.svg" alt="" />
                 <p className="ml-3 text-xs lg:text-lg font-normal text-white">

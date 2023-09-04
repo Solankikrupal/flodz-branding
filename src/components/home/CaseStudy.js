@@ -1,9 +1,48 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-/* import { Carousel } from "react-responsive-carousel"; */
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function CaseStudy() {
+  //slick slider
+  const sliderSettings = {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    infinite: true,
+    dots: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    appendDots: (dots) => (
+      <ul>
+        {dots.map((dot, index) => (
+          <li key={index}>{dot}</li>
+        ))}
+      </ul>
+    ),
+  };
+
+  const responsiveSettings = [
+    {
+      breakpoint: 1024, // Large screens and up
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 768, // Medium screens
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 480, // Small screens
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ];
+
   let data = [
     {
       img: "/images/project01.png",
@@ -28,7 +67,35 @@ function CaseStudy() {
         { tag: "UI UX Design" },
       ],
     },
+    {
+      img: "/images/project04.png",
+      title: "Find Roommates with Similar Tastes and Styles as You",
+      disc: "Real Estate",
+      tags: [
+        { tag: "Housing" },
+        { tag: "Mobile App" },
+        { tag: "UI UX Design" },
+      ],
+    },
+    {
+      img: "/images/project05.png",
+      title:
+        "Embark on a journey of personal growth with a rich tapestry of insightful articles ",
+      disc: "Personal Development",
+      tags: [{ tag: "Media" }, { tag: "Web App" }, { tag: "UI UX Design" }],
+    },
+    {
+      img: "/images/project06.png",
+      title: "Unlock Your Hidden Talent with a Community of Expert Trainers",
+      disc: "Recreation",
+      tags: [
+        { tag: "Lifestyle" },
+        { tag: "Mobile App" },
+        { tag: "UI UX Design" },
+      ],
+    },
   ];
+
   return (
     <section
       className="pt-8 md:pt-16 px-5 md:px-10 pb-12 md:pb-24"
@@ -67,13 +134,16 @@ function CaseStudy() {
           </div>
         </div>
       </div>
-
-      <div className="pt-14 md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 space-y-4 md:space-y-0">
+      <Slider
+        {...sliderSettings}
+        responsive={responsiveSettings}
+        className="pt-14"
+      >
         {data.map((item, index) => (
           <Link
             key={index}
             to={"/case-study/0" + index}
-            className=" rounded-xl  transform hover:scale-105 transition duration-500"
+            className=" rounded-xl  transform hover:scale-105 transition duration-500 px-3"
           >
             <div className="relative">
               <img className="w-full rounded-xl" src={item.img} alt="Colors" />
@@ -96,7 +166,7 @@ function CaseStudy() {
             </p>
           </Link>
         ))}
-      </div>
+      </Slider>
     </section>
   );
 }

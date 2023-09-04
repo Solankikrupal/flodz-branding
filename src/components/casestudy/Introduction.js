@@ -39,6 +39,24 @@ function Introduction() {
         { tag_name: "Services", tag_detail: "UX & UI Design" },
       ],
     },
+    "/case-study/04": {
+      introduction:
+        "Magz is your passport to a world of knowledge, inspiration, and connection. With a vibrant and inclusive community, embark on a journey of exploration and personal growth. We curate a rich tapestry of insightful articles, stories, and perspectives that cover a wide spectrum of topics, ensuring there's something for everyone",
+      tags: [
+        { tag_name: "Industry", tag_detail: "Media & Publishing" },
+        { tag_name: "Platform", tag_detail: "Web App" },
+        { tag_name: "Services", tag_detail: "UX & UI Design" },
+      ],
+    },
+    "/case-study/05": {
+      introduction:
+        "Vagoda Audiobooks is a premier online platform dedicated to providing an exceptional audiobook experience. The Vagoda Audiobook Web app utilizes the power of thoughtful user interfaces and visually captivating layouts. Explore a world of audiobooks, where seamless navigation, personalized recommendations, offline listening, exclusive titles, and a vibrant community redefine the way we experience literature.",
+      tags: [
+        { tag_name: "Industry", tag_detail: "Lifestyle" },
+        { tag_name: "Platform", tag_detail: "Mobile App" },
+        { tag_name: "Services", tag_detail: "UX & UI Design" },
+      ],
+    },
     // Add more case studies as needed
   };
 

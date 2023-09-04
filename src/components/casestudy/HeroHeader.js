@@ -25,6 +25,16 @@ function HeroHeader() {
       desc: "Explore a world of audiobooks, where seamless navigation, personalized recommendations, offline listening, exclusive titles, and a vibrant community redefine the way we experience literature.",
       project_banner: "/images/case-study-banner-04.png",
     },
+    "/case-study/04": {
+      project_name: "Collaboration Catalyst",
+      desc: "Magz is a dynamic and diverse blog website dedicated to sparking your curiosity, fostering meaningful connections, and inspiring personal growth",
+      project_banner: "/images/case-study-banner-05.png",
+    },
+    "/case-study/05": {
+      project_name: "Engagement Elevator",
+      desc: "Uncover hidden talents, ignite your creativity, and unlock new horizons in the company of experienced guides at HobbyMentor who are eager to share their expertise with you",
+      project_banner: "/images/case-study-banner-06.png",
+    },
     // Add more case studies as needed
   };
 
