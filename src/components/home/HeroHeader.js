@@ -22,7 +22,7 @@ function HeroHeader() {
         <div className="mt-6 text-lg lg:text-4xl font-light text-wheat-white antialiased">
           Propelling brilliance to new heights!
         </div>
-        <div className="mt-6 lg:text-xl font-light text-wheat-white antialiased mx-auto max-w-2xl">
+        <div className="mt-6 lg:text-xl font-light text-wheat-white antialiased mx-auto max-w-3xl">
           Nurturing Growth, Inspiring Excellence: Unleashing the Power of
           Improvement. Embrace a journey of constant evolution, where progress
           knows no bounds.
