@@ -23,7 +23,7 @@ root.render(
         <Route path="/case-study/03" element={<CaseStudyPage />} />
         <Route path="/case-study/04" element={<CaseStudyPage />} />
         <Route path="/case-study/05" element={<CaseStudyPage />} />
-        <Route path="/contact-us" element={<ContactUsPage />} />
+        <Route path="/get-a-quote" element={<ContactUsPage />} />
         {/* Add more routes here */}
       </Routes>
     </BrowserRouter>

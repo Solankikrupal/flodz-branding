@@ -29,14 +29,7 @@ function HeroHeader() {
           Improvement. Embrace a journey of constant evolution, where progress
           knows no bounds.
         </div>
-        <Link
-          to="services"
-          spy={true}
-          smooth={true}
-          offset={-70} // Adjust offset as needed
-          duration={600}
-          className=""
-        >
+        <Direct to="/get-a-quote" className="">
           <button className="group text-sm mt-6 mx-1 px-4 lg:px-8 py-4 rounded-lg font-normal tracking-wide bg-btn-purple text-white outline-none ">
             Get a Quote
             <svg
@@ -61,8 +54,15 @@ function HeroHeader() {
               />
             </svg>
           </button>
-        </Link>
-        <Direct to="/contact-us" className="">
+        </Direct>
+        <Link
+          to="feedback"
+          spy={true}
+          smooth={true}
+          offset={-70} // Adjust offset as needed
+          duration={600}
+          className=""
+        >
           <button className="group text-sm mt-6 mx-1 px-4 lg:px-8 py-4 rounded-lg font-normal tracking-wide border text-white bg-btn-secondary border-wheat-white ">
             Contact Us
             <svg
@@ -87,7 +87,7 @@ function HeroHeader() {
               />
             </svg>
           </button>
-        </Direct>
+        </Link>
       </>
     </div>
   );
