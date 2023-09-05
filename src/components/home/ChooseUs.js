@@ -71,10 +71,10 @@ function ChooseUs() {
         pauseOnClick
         direction={"left"}
         speed={200}
-        continuous={true}
-        className="flex items-center justify-center pt-14 grid grid-cols-12 gap-1"
+        loop={50}
+        className="flex items-center justify-center pt-14 grid grid-cols-12"
       >
-        <img className=" col-span-12" src="/svg/fueling-success.svg" alt="" />
+        <img className="col-span-12 px-16" src="/svg/fueling-success.svg" alt="" />
       </Marquee>
     </section>
   );

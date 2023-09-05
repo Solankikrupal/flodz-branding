@@ -43,7 +43,7 @@ function HeroHeader() {
   // Use the data object as needed in your code
 
   return (
-    <div className="text-center mt-32 xl:mt-26">
+    <div className="text-center mt-10 xl:mt-10">
       <>
         <div className="grid  md:grid-cols-2">
           <div className="text-left self-center">
@@ -86,42 +86,9 @@ function HeroHeader() {
                 </svg>
               </button>
             </Link>
-            <Link
-              to="contact-us"
-              spy={true}
-              smooth={true}
-              offset={-70} // Adjust offset as needed
-              duration={600}
-              className=""
-            >
-              <button className="group text-sm mt-6 mx-1 px-4 lg:px-8 py-4 rounded-lg font-normal tracking-wide border text-white bg-btn-secondary border-wheat-white ">
-                Get in Touch
-                <svg
-                  className="inline transition duration-150 ease-in-out group-hover:scale-150"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M5.83333 14.1667L14.1667 5.83337"
-                    stroke="white"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                  <path
-                    d="M5.83333 5.83337H14.1667V14.1667"
-                    stroke="white"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </button>
-            </Link>
           </div>
           <div className="text-center relative w-full h-full pt-5 md:pt-0">
-            <img className="m-auto" src={data.project_banner} alt=""></img>
+            <img className="mx-auto" src={data.project_banner} alt=""></img>
           </div>
         </div>
       </>

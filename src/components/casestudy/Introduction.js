@@ -63,13 +63,13 @@ function Introduction() {
   const data = dataMap[pathname] || [];
   return (
     <section className="pt-4 md:pt-4 px-5 md:px-10 pb-4 md:pb-4">
-      <h1 className="text-2xl lg:text-4xl font-bold tracking-tight leading-none xl:text-4xl text-custom-gradient-white mb-8">
+      <h1 className="text-2xl lg:text-4xl font-bold tracking-tight leading-none xl:text-4xl text-custom-gradient-white mb-2">
         Introduction
       </h1>
       <p className="lg:text-xl font-light text-wheat-white antialiased opacity-60">
         {data.introduction}
       </p>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-11">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 mt-5">
         {data.tags.map((item, index) => (
           <div key={index}>
             <h5 className=" text-sm font-normal text-wheat-white antialiased opacity-60 uppercase">
