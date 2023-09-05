@@ -32,7 +32,7 @@ function Services() {
       className="pt-8 lg:pt-16 px-5 lg:px-10 pb-12 lg:pb-24"
       id="services"
     >
-      <div className="bg-[#080807] rounded-2xl px-4 py-8 lg:px-10 lg:py-20">
+      <div className="bg-[#080807] rounded-2xl px-4 py-8 lg:px-10 lg:py-20 service-container">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">
             <div className="">
@@ -64,12 +64,12 @@ function Services() {
             </div>
           </div>
         </div>
-        <div className="grid md:grid-cols-2 lg:grid-cols-12 pt-16 gap-2 lg:gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-12 pt-16 gap-2 lg:gap-10 ">
           {data.map((item, index) => (
             <div
               key={index}
-              className="lg:col-span-4 py-4 lg:py-6 lg:px-8 custom-border-primary mb-3 lg:mb-6"
-            >
+              className="lg:col-span-4 py-4 lg:py-6 lg:px-8 custom-border-primary mb-3 lg:mb-6 cursor-pointer"
+            > 
               <div className="">
                 <div className=""></div>
                 <h4 className="font-semibold text-3xl text-wheat-white mb-3">

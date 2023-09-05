@@ -61,10 +61,14 @@ body {
     )
   );
 }
-
-.custom-border-primary {
+.service-container{
+  background: url("/public/images/service_bg.png") no-repeat;
+  background-size: cover;
+}
+.custom-border-primary:hover {
   border-radius: 33.6px;
   box-shadow: 1px 1px 1px 1px rgba(102, 51, 238, 0.3);
+  transition: all 0.3s ease-in;
 }
 
 .custom-backgrond-footer {
