@@ -30,6 +30,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.slick-track{
+  padding-block: 20px;
+}
 .text-custom-gradient-white {
   background: linear-gradient(
     90deg,
