@@ -183,6 +183,36 @@ function ProblemFaced() {
         },
       ],
     },
+    "/case-study/06": {
+      problems: [
+        {
+          problem_name: "Ordering Process",
+          desc: "Customers struggled with complicated and time-consuming ordering processes",
+        },
+        {
+          problem_name: "Order Transparency ",
+          desc: "Customers are anxious about the status of their food orders",
+        },
+        {
+          problem_name: "Informed Dining Choices",
+          desc: "Choosing the right restaurant and dish was challenging, especially in a crowded marketplace",
+        },
+      ],
+      solutions: [
+        {
+          solution_name: "Seamless Ordering",
+          desc: "Intuitive and user-friendly interface for ordering your favorite meals",
+        },
+        {
+          solution_name: "Track Your Feast in Real-Time",
+          desc: "Know precisely when your meal is being prepared and when it's on its way",
+        },
+        {
+          solution_name: "Community Recommendations",
+          desc: "Make informed decisions with DashEats's restaurant ratings and customer reviews ",
+        },
+      ],
+    },
 
     // Add more case studies as needed
   };

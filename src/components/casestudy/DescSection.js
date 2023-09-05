@@ -65,6 +65,17 @@ function DescSection() {
       sideTextTag: "Champion your hidden talent",
       sideTextTitle: "Lifestyle and Leisure",
     },
+    "/case-study/06": {
+      descBanner: "/svg/casestudy-desc07.svg",
+      tagLine: "Freshly served food",
+      tagTitle: "Doorstep Delivery",
+      tagDesc:
+        "Few taps to browse menus, customize orders, and complete transactions effortlessly",
+      tagBottomContent: "/svg/tag-bottom-content-07.svg",
+      sideBanner: "/images/side-banner-bg-06.png",
+      sideTextTag: "Feast at your comfort",
+      sideTextTitle: "Food Delivery",
+    },
     // Add more case studies as needed
   };
 

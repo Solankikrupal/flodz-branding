@@ -27,6 +27,10 @@ function QuoteSection() {
       quotes:
         "Bringing individuals and trainers together in a supportive and inclusive environment",
     },
+    "/case-study/06": {
+      quotes:
+        "Effortless ordering & community recommendations for a seamless and informed dining journey",
+    },
     // Add more case studies as needed
   };
 

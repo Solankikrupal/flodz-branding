@@ -57,6 +57,15 @@ function Introduction() {
         { tag_name: "Services", tag_detail: "UX & UI Design" },
       ],
     },
+    "/case-study/06": {
+      introduction:
+        "DashEats boasts an expansive network of top-notch restaurants, from local gems to renowned eateries, offering an unparalleled selection of cuisines. DashEats is more than an app; it's your ultimate dining companion. It redefines food delivery with convenience, choice, and culinary excellence.",
+      tags: [
+        { tag_name: "Industry", tag_detail: "Hospitality" },
+        { tag_name: "Platform", tag_detail: "Mobile App" },
+        { tag_name: "Services", tag_detail: "UX & UI Design" },
+      ],
+    },
     // Add more case studies as needed
   };
 

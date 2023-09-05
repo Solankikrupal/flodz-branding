@@ -21,6 +21,9 @@ function ProjectMidBanner() {
     "/case-study/05": {
       banner: "/images/case-study-mid-banner-06.png",
     },
+    "/case-study/06": {
+      banner: "/images/case-study-mid-banner-07.png",
+    },
     // Add more case studies as needed
   };
 
