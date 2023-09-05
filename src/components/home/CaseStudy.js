@@ -22,63 +22,6 @@ function CaseStudy() {
         ))}
       </div>
     ),
-    prevArrow: (
-      <>
-        <button
-          type="button"
-          className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-prev
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              className="w-4 h-4 text-white dark:text-gray-800"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M5 1 1 5l4 4"
-              />
-            </svg>
-            <span className="sr-only">Previous</span>
-          </span>
-        </button>
-      </>
-    ),
-
-    nextArrow: (
-      <>
-        <button
-          type="button"
-          className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-          data-carousel-next
-        >
-          <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-            <svg
-              className="w-4 h-4 text-white dark:text-gray-800"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 6 10"
-            >
-              <path
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="m1 9 4-4-4-4"
-              />
-            </svg>
-            <span className="sr-only">Next</span>
-          </span>
-        </button>
-      </>
-    ),
   };
 
   const responsiveSettings = [
@@ -108,6 +51,7 @@ function CaseStudy() {
       title: "Drive sales performance in the automotive industry",
       disc: "Automotive Sales",
       tags: [{ tag: "Auto" }, { tag: "Mobile App" }, { tag: "UI UX Design" }],
+      show: document.location.pathname === "/case-study/00" ? false : true,
     },
     {
       img: "/images/project02.png",
@@ -115,6 +59,7 @@ function CaseStudy() {
         "Explore a vibrant community redefining the way we experience literature",
       disc: "Infotainment",
       tags: [{ tag: "Media" }, { tag: "Web App" }, { tag: "UI UX Design" }],
+      show: document.location.pathname === "/case-study/01" ? false : true,
     },
     {
       img: "/images/project03.png",
@@ -125,6 +70,7 @@ function CaseStudy() {
         { tag: "Mobile App" },
         { tag: "UI UX Design" },
       ],
+      show: document.location.pathname === "/case-study/02" ? false : true,
     },
     {
       img: "/images/project04.png",
@@ -135,6 +81,7 @@ function CaseStudy() {
         { tag: "Mobile App" },
         { tag: "UI UX Design" },
       ],
+      show: document.location.pathname === "/case-study/03" ? false : true,
     },
     {
       img: "/images/project05.png",
@@ -142,6 +89,7 @@ function CaseStudy() {
         "Embark on a journey of personal growth with a rich tapestry of insightful articles ",
       disc: "Personal Development",
       tags: [{ tag: "Media" }, { tag: "Web App" }, { tag: "UI UX Design" }],
+      show: document.location.pathname === "/case-study/04" ? false : true,
     },
     {
       img: "/images/project06.png",
@@ -152,6 +100,7 @@ function CaseStudy() {
         { tag: "Mobile App" },
         { tag: "UI UX Design" },
       ],
+      show: document.location.pathname === "/case-study/05" ? false : true,
     },
   ];
 
@@ -198,33 +147,41 @@ function CaseStudy() {
         responsive={responsiveSettings}
         className="pt-14"
       >
-        {data.map((item, index) => (
-          <Link
-            key={index}
-            to={"/case-study/0" + index}
-            className=" rounded-xl  transform hover:scale-105 transition duration-500 px-3"
-          >
-            <div className="relative">
-              <img className="w-full rounded-xl" src={item.img} alt="Colors" />
-            </div>
-            <div className="mt-6 mb-2">
-              {item.tags.map((item, index) => (
-                <div
-                  key={index}
-                  className="text-xs inline-flex items-center font-normal leading-sm  px-2 py-1 text-custom-gradient-pink text-wheat-white rounded-full mx-1"
-                >
-                  {item.tag}
-                </div>
-              ))}
-            </div>
-            <h1 className="text-custom-gradient text-xl font-bold cursor-pointer">
-              {item.title}
-            </h1>
-            <p className="text-base font-normal text-[#D9D9D9] opacity-30 font-serif mt-2">
-              {item.disc}
-            </p>
-          </Link>
-        ))}
+        {data.map((item, index) =>
+          item.show ? (
+            <Link
+              key={index}
+              to={"/case-study/0" + index}
+              className=" rounded-xl  transform hover:scale-105 transition duration-500 px-3"
+            >
+              <div className="relative">
+                <img
+                  className="w-full rounded-xl"
+                  src={item.img}
+                  alt="Colors"
+                />
+              </div>
+              <div className="mt-6 mb-2">
+                {item.tags.map((item, index) => (
+                  <div
+                    key={index}
+                    className="text-xs inline-flex items-center font-normal leading-sm  px-2 py-1 text-custom-gradient-pink text-wheat-white rounded-full mx-1"
+                  >
+                    {item.tag}
+                  </div>
+                ))}
+              </div>
+              <h1 className="text-custom-gradient text-xl font-bold cursor-pointer">
+                {item.title}
+              </h1>
+              <p className="text-base font-normal text-[#D9D9D9] opacity-30 font-serif mt-2">
+                {item.disc}
+              </p>
+            </Link>
+          ) : (
+            ""
+          )
+        )}
       </Slider>
     </section>
   );

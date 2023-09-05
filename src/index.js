@@ -7,12 +7,14 @@ import App from "./pages/App";
 import reportWebVitals from "./reportWebVitals";
 import CaseStudyPage from "./pages/CaseStudyPage";
 import ContactUsPage from "./pages/ContactUsPage";
+import ScrollToTop from "./components/assets/ScrollToTop";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/case-study/00" element={<CaseStudyPage />} />

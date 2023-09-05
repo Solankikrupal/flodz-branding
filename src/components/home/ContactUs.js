@@ -119,7 +119,7 @@ function ContactUs() {
               </div>
               <button
                 type="submit"
-                className="mt-5 rounded-md border border-white px-10 py-2 text-white"
+                className="mt-5 rounded-md border border-white px-10 py-2 text-white hover:bg-wheat-white hover:text-btn-purple"
               >
                 Submit
               </button>

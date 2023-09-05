@@ -1,6 +1,7 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import { Link } from "react-scroll";
+import { Link as Direct } from "react-router-dom";
 
 function HeroHeader() {
   return (
@@ -59,12 +60,8 @@ function HeroHeader() {
             </svg>
           </button>
         </Link>
-        <Link
-          to="contact-us"
-          spy={true}
-          smooth={true}
-          offset={-70} // Adjust offset as needed
-          duration={600}
+        <Direct
+          to="/contact-us"
           className=""
         >
           <button className="group text-sm mt-6 mx-1 px-4 lg:px-8 py-4 rounded-lg font-normal tracking-wide border text-white bg-btn-secondary border-wheat-white ">
@@ -91,7 +88,7 @@ function HeroHeader() {
               />
             </svg>
           </button>
-        </Link>
+        </Direct>
       </>
     </div>
   );
