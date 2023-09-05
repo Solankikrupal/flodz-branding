@@ -7,17 +7,19 @@ function HeroHeader() {
   return (
     <div className="text-center mt-32 xl:mt-26 pb-6">
       <>
-        <div className="text-2xl lg:text-7xl font-bold  leading-none text-wheat-white inline">
-          We elevate
-        </div>
-        <div className="text-2xl lg:text-7xl font-bold  leading-none inline ml-2 title-text-gradient">
-          <Typewriter
-            options={{
-              strings: ["Ideas","Experiences","Performance"],
-              autoStart: true,
-              loop: true,
-            }}
-          />
+        <div className="flex m-auto w-full items-center justify-center">
+          <div className="text-2xl lg:text-7xl font-bold  leading-none text-wheat-white inline">
+            We elevate
+          </div>
+          <div className="text-2xl lg:text-7xl font-bold  leading-none  ml-4 title-text-gradient">
+            <Typewriter
+              options={{
+                strings: ["Ideas", "Experiences", "Performance"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </div>
         </div>
         <div className="mt-6 text-lg lg:text-4xl font-light text-wheat-white antialiased">
           Propelling brilliance to new heights!
@@ -60,12 +62,9 @@ function HeroHeader() {
             </svg>
           </button>
         </Link>
-        <Direct
-          to="/contact-us"
-          className=""
-        >
+        <Direct to="/contact-us" className="">
           <button className="group text-sm mt-6 mx-1 px-4 lg:px-8 py-4 rounded-lg font-normal tracking-wide border text-white bg-btn-secondary border-wheat-white ">
-            Get in Touch
+            Contact Us
             <svg
               className="inline transition duration-150 ease-in-out group-hover:scale-150"
               width="20"

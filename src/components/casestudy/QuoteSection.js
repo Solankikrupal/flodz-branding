@@ -36,7 +36,7 @@ function QuoteSection() {
     <section className="pt-4 md:pt-6 px-5 md:px-10 pb-4 md:pb-8">
       <div className="grid lg:grid-cols-12 items-center">
         <div className="col-span-2 w-full text-center items-center">
-          <img className="m-auto" src="/svg/quotes.svg" alt="quote" />
+          <img className="m-auto opacity-30" src="/svg/quotes.svg" alt="quote" />
         </div>
         <div className=" col-span-10">
           <h1 className="text-2xl lg:text-4xl font-bold tracking-tight leading-none  xl:text-4xl text-custom-gradient-secondary">

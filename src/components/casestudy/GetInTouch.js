@@ -42,7 +42,7 @@ function GetInTouch() {
                 className=""
               >
                 <button className="group text-sm mt-6 mx-1 px-4 lg:px-8 py-4 rounded-lg font-normal tracking-wide border text-white bg-btn-secondary border-wheat-white ">
-                  Get in Touch
+                  Contact Us
                   <svg
                     className="inline transition duration-150 ease-in-out group-hover:scale-150"
                     width="20"
