@@ -13,7 +13,7 @@ function HeroHeader() {
         <div className="text-2xl lg:text-7xl font-bold  leading-none inline ml-2 title-text-gradient">
           <Typewriter
             options={{
-              strings: ["Ideas,","Experiences,","Performance,"],
+              strings: ["Ideas","Experiences","Performance"],
               autoStart: true,
               loop: true,
             }}
