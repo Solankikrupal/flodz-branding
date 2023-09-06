@@ -47,11 +47,22 @@ function CaseStudy() {
 
   let data = [
     {
+      img: "/images/project00.png",
+      title: "Order and enjoy food with doorstep delivery",
+      disc: "Food Ordering",
+      tags: [
+        { tag: "Hospitality" },
+        { tag: "Mobile App" },
+        { tag: "UI UX Design" },
+      ],
+      url: "/case-study/06",
+    },
+    {
       img: "/images/project01.png",
       title: "Drive sales performance in the automotive industry",
       disc: "Automotive Sales",
       tags: [{ tag: "Auto" }, { tag: "Mobile App" }, { tag: "UI UX Design" }],
-      show: document.location.pathname === "/case-study/00" ? false : true,
+      url: "/case-study/00",
     },
     {
       img: "/images/project02.png",
@@ -59,7 +70,7 @@ function CaseStudy() {
         "Explore a vibrant community redefining the way we experience literature",
       disc: "Infotainment",
       tags: [{ tag: "Media" }, { tag: "Web App" }, { tag: "UI UX Design" }],
-      show: document.location.pathname === "/case-study/01" ? false : true,
+      url: "/case-study/01",
     },
     {
       img: "/images/project03.png",
@@ -70,7 +81,7 @@ function CaseStudy() {
         { tag: "Mobile App" },
         { tag: "UI UX Design" },
       ],
-      show: document.location.pathname === "/case-study/02" ? false : true,
+      url: "/case-study/02",
     },
     {
       img: "/images/project04.png",
@@ -81,7 +92,7 @@ function CaseStudy() {
         { tag: "Mobile App" },
         { tag: "UI UX Design" },
       ],
-      show: document.location.pathname === "/case-study/03" ? false : true,
+      url: "/case-study/03",
     },
     {
       img: "/images/project05.png",
@@ -89,7 +100,7 @@ function CaseStudy() {
         "Embark on a journey of personal growth with a rich tapestry of insightful articles ",
       disc: "Personal Development",
       tags: [{ tag: "Media" }, { tag: "Web App" }, { tag: "UI UX Design" }],
-      show: document.location.pathname === "/case-study/04" ? false : true,
+      url: "/case-study/04",
     },
     {
       img: "/images/project06.png",
@@ -100,7 +111,7 @@ function CaseStudy() {
         { tag: "Mobile App" },
         { tag: "UI UX Design" },
       ],
-      show: document.location.pathname === "/case-study/05" ? false : true,
+      url: "/case-study/05",
     },
   ];
 
@@ -147,41 +158,33 @@ function CaseStudy() {
         responsive={responsiveSettings}
         className="pt-14"
       >
-        {data.map((item, index) =>
-          item.show ? (
-            <Link
-              key={index}
-              to={"/case-study/0" + index}
-              className=" rounded-xl  transform hover:scale-105 transition duration-500 px-3"
-            >
-              <div className="relative">
-                <img
-                  className="w-full rounded-xl"
-                  src={item.img}
-                  alt="Colors"
-                />
-              </div>
-              <div className="mt-6 mb-2">
-                {item.tags.map((item, index) => (
-                  <div
-                    key={index}
-                    className="text-xs inline-flex items-center font-normal leading-sm  px-2 py-1 text-custom-gradient-pink text-wheat-white rounded-full mx-1"
-                  >
-                    {item.tag}
-                  </div>
-                ))}
-              </div>
-              <h1 className="text-custom-gradient text-xl font-bold cursor-pointer">
-                {item.title}
-              </h1>
-              <p className="text-base font-normal text-[#D9D9D9] opacity-30 font-serif mt-2">
-                {item.disc}
-              </p>
-            </Link>
-          ) : (
-            ""
-          )
-        )}
+        {data.map((item, index) => (
+          <Link
+            key={index}
+            to={item.url}
+            className=" rounded-xl  transform hover:scale-105 transition duration-500 px-3"
+          >
+            <div className="relative">
+              <img className="w-full rounded-xl" src={item.img} alt="Colors" />
+            </div>
+            <div className="mt-6 mb-2">
+              {item.tags.map((item, index) => (
+                <div
+                  key={index}
+                  className="text-xs inline-flex items-center font-normal leading-sm  px-2 py-1 text-custom-gradient-pink text-wheat-white rounded-full mx-1"
+                >
+                  {item.tag}
+                </div>
+              ))}
+            </div>
+            <h1 className="text-custom-gradient text-xl font-bold cursor-pointer">
+              {item.title}
+            </h1>
+            <p className="text-base font-normal text-[#D9D9D9] opacity-30 font-serif mt-2">
+              {item.disc}
+            </p>
+          </Link>
+        ))}
       </Slider>
     </section>
   );
