@@ -45,7 +45,7 @@ function DescSection() {
     },
     "/case-study/04": {
       descBanner: "/svg/casestudy-desc05.svg",
-      tagLine: "SHare, learn and grow",
+      tagLine: "Share, learn and grow",
       tagTitle: "Elegant Design",
       tagDesc:
         "Suggesting that your mobile app is seamlessly blending various functions to transform the automotive sales industry.",

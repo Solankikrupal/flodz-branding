@@ -52,7 +52,7 @@ function HeroHeader() {
     <div className="text-center mt-10 xl:mt-10">
       <>
         <div className="grid  md:grid-cols-2">
-          <div className="text-left self-center">
+          <div className="text-left self-start pt-14">
             <div className="text-2xl lg:text-7xl font-bold  leading-none inline title-text-gradient">
               {data.project_name}
             </div>
